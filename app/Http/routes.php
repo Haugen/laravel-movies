@@ -21,7 +21,7 @@ Route::get('/', 'MoviesController@index');
  * En route som ska visa en enskild film. Kallar på metoden show
  * i Controllern "MoviesController".
  */
-Route::get('movie/{slug}', 'MovieController@show');
+Route::get('movies/{slug}', 'MovieController@show');
 
 Route::get('home', 'HomeController@index');
 
