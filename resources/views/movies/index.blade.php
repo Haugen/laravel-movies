@@ -1,4 +1,4 @@
-@extends('movies.master')
+@extends('master')
 
 @section('body')
   <div class="col-xs-12">
