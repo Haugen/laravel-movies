@@ -11,7 +11,17 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+/**
+ * En route till roten som ska visa alla filmer. Kallar på metoden index
+ * i Controllern "MoviesController".
+ */
+Route::get('/', 'MoviesController@index');
+
+/**
+ * En route som ska visa en enskild film. Kallar på metoden show
+ * i Controllern "MoviesController".
+ */
+Route::get('movie/{slug}', 'MovieController@show');
 
 Route::get('home', 'HomeController@index');
 
